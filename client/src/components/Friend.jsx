@@ -9,7 +9,6 @@ import UserImage from "./UserImage";
 
 
 const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
-  const baseURL = process.env.REACT_APP_BASE_URL
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { _id } = useSelector((state) => state.user);
